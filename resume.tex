@@ -1,0 +1,108 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Heidi}{Clayton}
+\title{R\'esum\'e}                               % optional, remove / comment the line if not wanted
+\address{P.O. Box 288}{Corbett, OR 97019}{United States}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[fixed]{+1~(503)~896~7653}                    % optional, remove / comment the line if not wanted
+\email{heidiaclayton@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://github.com/heidiaclayton}                         % optional, remove / comment the line if not wanted
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2013--2017}{B.S. Applied Computer Science}{Oregon State University}{Corvallis}{\textit{3.25 GPA}}{Computer science coursework was supplemented with statistics courses to satisfy personal applied plan.}  % arguments 3 to 6 can be left empty
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2015--2016}{Teaching Assistant}{Oregon State University}{Corvallis}{}{Worked for two professors for three introductory programming courses, CS160, CS161, and CS162.\newline{}%
+Tasks:%
+\begin{itemize}%
+\item Lead labs which demonstrate programming concepts.
+\item Hold office hours to assist students on concepts and programming assignments.
+\item Grade assignments, labs, and quizzes.
+\item Collaborate with professor and coworkers...
+\begin{itemize}
+\item During labs and office hours
+\item During weekly meetings in discussions about improving the courses
+\end{itemize}
+\end{itemize}}
+\cventry{2016--2016}{Software Engineer Intern}{Garmin AT}{Salem}{}{Worked for six months on programming tasks both individually and on a team.\newline{}
+Tasks:%
+\begin{itemize}%
+\item Fix bugs and implement new features on a tool for enforcing the company code conventions standards. The tool used the Python bindings for the LLVM compiler front-end Clang, which is implemented in C.
+\begin{itemize}
+\item Tests were written in Python using Nose.
+\item Project was worked on individually with the supervision of a senior software engineer mentor.
+\end{itemize}
+\item Fix bugs on an ADS-B transponder for use in aircrafts.
+\begin{itemize}
+\item Unit tests were written using C and company testing framework.
+\item System tests were written using Python and company testing framework.
+\item Code was released to the public in the product in September, 2016.
+\item Project was worked on as part of a five person team under the supervision of a senior software engineer mentor.
+\item Project is proprietary.
+\end{itemize}
+\end{itemize}}
+\subsection{Other Projects}
+\cventry{2016--2017}{Student Developer}{NASA JPL}{Remote}{}{Designed, tested, and developed a software package for analyzing hyperspectral imagery.\newline{}%
+Tasks:%
+\begin{itemize}%
+\item Wrote various technical documents.
+\item Collaborated both in person and remotely with various engineers and scientists.
+\item Compiled data from various sources for use in analysis.
+\item Wrote software that...
+\begin{itemize}
+\item Classifies each pixel in a hyperspectral image as a type of mineral or other type of land cover.
+\item Isolates pixels associated with mining.
+\item Correlates those pixels with environmental data.
+\end{itemize}
+\item Code was written in Python using various open-source software libraries.
+\item Project was worked on as a team of three in person and supervised remotely by a data scientist at NASA JPL.
+\item Project is available on GitHub and licensed under GPLv2.
+\item Recipient of the CH2M Multidisciplinary Collaboration Award at the 2017 Engineering Expo at Oregon State University.
+\end{itemize}}
+\section{Skills}
+\cvdoubleitem{C/C++}{Proficient in using C/C++ for both large and small projects. Competent in both system-level programming in C and utilizing objects in C++. Experience is from both university courses and use during previously listed jobs.}{Python}{Proficient in using the Python shell as well as writing scripts. Proficient in both procedural and object oriented uses. Experience is from both university courses and use during previously listed jobs.}
+\cvdoubleitem{LaTeX}{Basic skill present in LaTeX typesetting. Basic skill in producing documents such as mathematical writeups as well as standard reports. Experience is from both university courses and personal use.}{Linux}{Basic experience with using Linux operating systems. Basic knowledge of Linux system administration is also present. Experience is from both university courses and personal use.}
+
+\section{References}
+Available upon request.
+\clearpage
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
